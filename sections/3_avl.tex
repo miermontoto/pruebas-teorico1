@@ -1,0 +1,50 @@
+\chapter{Análisis de valores límite}
+Para el análisis de valores límite, se han seleccionado los valores límite de las clases de equivalencia
+de entrada definidas en el capítulo anterior, poniendo especial atención al cumplimiento de las aperturas
+de los intervalos.
+
+\section{Base imponible ($BI$)}
+Debido a la naturaleza de esta variable, se han seleccionado los valores límite de los intervalos definidos
+anteriormente.
+\begin{itemize}
+	\item $BI = 0$€
+	\item $BI = 8999$€
+	\item $BI = 9000$€
+	\item $BI = 12449$€
+	\item $BI = 12450$€
+	\item $BI = 20199$€
+	\item $BI = 20200$€
+	\item $BI = 35199$€
+	\item $BI = 35200$€
+	\item $BI = 59999$€
+	\item $BI = 60000$€
+	\item $BI = 299999$€
+	\item $BI = 300000$€
+\end{itemize}
+\newpage{}
+\section{Retenciones ($R$)}
+Esta variable es especialmente interesante para el AVL, ya que el cálculo de las retenciones depende
+directamente de la base imponible, por lo que debería haber una relación directa entre los valores límite
+de ambas variables.
+\begin{itemize}
+	\item $R = 0$€
+	\item $R = BI - 1$€
+	\item $R = BI$€
+	\item $R = BI + 1$€
+\end{itemize}
+
+\section{Número de empleadores}
+En esta sección no se considera relevante aplicar técnicas AVL, ya que el mero cumplimiento de las
+diferentes clases de equivalencia garantiza el correcto funcionamiento del sistema debido a la pertenencia de
+los posibles valores al conjunto entero.
+
+\section{Préstamos hipotecarios}
+Puesto que al resultado del cálculo de los impuestos se le aplican las deducciones correspondientes
+(en este enunciado solo se considera esta), los valores límite de esta variable solo afectan al
+hecho de si se aplica o no la deducción en sí, sin tener en cuenta el efecto de la deducción en el
+cálculo final. Para una comprobación más exhaustiva, se deberían considerar valores exactos que
+modifiquen el resultado final del cálculo de los impuestos teniendo en cuenta dichas deducciones.
+
+Puesto a que, como se indica en el diseño, la deducción no tiene un punto de corte ($9040$€), sino que
+se trata de un valor máximo, el valor del préstamo hipotecario no se considera relevante para el
+planteamiento de los casos de prueba ya que tampoco se calcula el valor de la deducción para las pruebas.

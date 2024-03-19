@@ -1,0 +1,54 @@
+\chapter{Casos de prueba}
+\section{Tabla de casos}
+\begin{table}[H]
+	\centering
+	\captionof{figure}{Casos de prueba iniciales propuestos para el sistema}
+	\begin{tabular}{l|c c c|r r r}
+		\hline
+		\multirow{2}*{\bf{ID}} & \multicolumn{3}{c|}{\textbf{Entradas}} & \multicolumn{3}{c}{\bf{Salidas}} \\
+		\cline{2-7}
+		& $BI$ & $R$ & $n_{E}$ & Obligatoriedad & Máx. grav. & Resultado \\
+		\hline
+		\hline
+		CP1 & 0€ & 0€ & 0 & No & 19\% & Sin cambios \\
+		CP2 & 8999€ & 0€ & 1 & No & 19\% & A pagar \\
+		CP3 & 8999€ & 0€ & 2 & Sí & 19\% & A pagar \\
+		CP4 & 9000€ & 0€ & 1 & Sí & 19\% & A pagar \\
+		CP5 & 12449€ & $I-1$€ & 1 & Sí & 19\% & A pagar \\
+		CP6 & 12450€ & $I+1$€ & 1 & Sí & 19\% & A devolver \\
+		CP7 & 20199€ & $I$€ & 1 & Sí & 19\% & Sin cambios \\
+		CP8 & 20200€ & 0€ & 1 & Sí & 30\% & A pagar \\
+		CP9 & 35199€ & 0€ & 1 & Sí & 30\% & A pagar \\
+		CP10 & 35200€ & 0€ & 1 & Sí & 37\% & A pagar \\
+		CP11 & 59999€ & 0€ & 1 & Sí & 37\% & A pagar \\
+		CP12 & 60000€ & 0€ & 1 & Sí & 45\% & A pagar \\
+		CP13 & 299999€ & 0€ & 1 & Sí & 45\% & A pagar \\
+		CP14 & 300000€ & 0€ & 1 & Sí & 47\% & A pagar \\
+		\hline
+	\end{tabular}
+\end{table}
+
+Los anteriores casos de prueba no cubren situaciones de validación de datos ya que no se considera relevante
+para este entregable teórico, para ello se definen algunos breves ejemplos de validación de datos:
+\begin{table}[H]
+	\centering
+	\captionof{figure}{Ejemplos de casos de prueba de validación de datos}
+	\begin{tabular}{l|c c c|r r r}
+		\hline
+		\multirow{2}*{\bf{ID}} & \multicolumn{3}{c|}{\textbf{Entradas}} & \multicolumn{3}{c}{\bf{Salidas}} \\
+		\cline{2-7}
+		& $BI$ & $R$ & $n_{E}$ & Obligatoriedad & Máx. grav. & Resultado \\
+		\hline
+		\hline
+		CP20 & -1€ & 0€ & 1 & \multicolumn{3}{c}{Error\cellcolor{red!25}} \\
+		CP21 & 0€ & -1€ & 1 & \multicolumn{3}{c}{Error\cellcolor{red!25}} \\
+		CP22 & 0€ & 0€ & -1 & \multicolumn{3}{c}{Error\cellcolor{red!25}} \\
+		\hline
+	\end{tabular}
+\end{table}
+
+\section{Trazabilidad}
+\begin{minipage}{\linewidth}
+	\includegraphics[width=\textwidth]{trazabilidad.png}
+	\captionof{figure}{Trazabilidad del sistema}
+\end{minipage}
